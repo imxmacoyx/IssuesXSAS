@@ -1,25 +1,25 @@
-@font-face{
+@font-face {
     font-family: Monserrat;
-    src:url(../font/Montserrat-Regular.ttf);
+    src: url(../font/Montserrat-Regular.ttf);
 }
 
-:root{
-    --fondoPrincipal:#ffff;
+:root {
+    --fondoPrincipal: #ffff;
     --fondoSecundario: #f2f2f2;
-    --colorPrimario:#20BDFF;
-    --colorSecundario:#5433FF;
+    --colorPrimario: #20BDFF;
+    --colorSecundario: #5433FF;
     --titulos: 33px;
-    --subtitulos:20px;
+    --subtitulos: 20px;
 }
 
-*{
+* {
     margin: 0;
     padding: 0;
 }
 
-body{
+body {
     font-family: Monserrat;
-    background-color: --background;
+    background-color: var(--fondoPrincipal);
 }
 
 /*Gradiente
@@ -29,4 +29,67 @@ background: -webkit-linear-gradient(to top, #A5FECB, #20BDFF, #5433FF);
 background: linear-gradient(to top, #A5FECB, #20BDFF, #5433FF); 
 
 */
+
+/*---------------- BARRA LATERAL ---------------*/
+.barra-lateral {
+    background-color: var(--fondoPrincipal);
+    color: black;
+    min-width: 300px;
+    min-height: 100vh;
+}
+
+
+.barra-lateral a {
+    color: #ffff;
+}
+
+.barra-lateral .logo {
+    margin: 10px 0 10px 0;
+    text-align: center;
+    padding: 20px;
+    border-bottom: 1px solid rgba(0,0,0,0.1);
+}
+
+.barra-lateral .usuario {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+.barra-lateral .usuario img{
+    border-radius: 60px;
+    margin: 20px;
+}
+
+.barra-lateral .usuario h2{
+    font-size: 25px;
+    align-self: center;
+}
+
+
+/*---------------- NAV ---------------*/
+.barra-lateral .menu a {
+    display: block;
+    text-decoration: none;
+    padding: 20px;
+    background-color: #f2f2f2;
+    color: black;
+    margin: 20px;
+    border: 1px solid white;
+    border-radius: 5px;
+}
+
+.barra-lateral .menu a i{
+    font-weight: normal;
+    margin-right: 20px;
+}
+
+.barra-lateral .menu .principal {
+    background: #5433FF;
+    background: -webkit-linear-gradient(to top, #A5FECB, #20BDFF, #5433FF);
+    background: linear-gradient(to top, #A5FECB, #20BDFF, #5433FF);
+    color: white;
+}
+
+
 
