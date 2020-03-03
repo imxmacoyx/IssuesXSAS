@@ -1,0 +1,32 @@
+@font-face{
+    font-family: Monserrat;
+    src:url(../font/Montserrat-Regular.ttf);
+}
+
+:root{
+    --fondoPrincipal:#ffff;
+    --fondoSecundario: #f2f2f2;
+    --colorPrimario:#20BDFF;
+    --colorSecundario:#5433FF;
+    --titulos: 33px;
+    --subtitulos:20px;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    font-family: Monserrat;
+    background-color: --background;
+}
+
+/*Gradiente
+
+background: #5433FF;  
+background: -webkit-linear-gradient(to top, #A5FECB, #20BDFF, #5433FF);  
+background: linear-gradient(to top, #A5FECB, #20BDFF, #5433FF); 
+
+*/
+
