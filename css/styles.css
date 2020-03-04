@@ -91,5 +91,53 @@ background: linear-gradient(to top, #A5FECB, #20BDFF, #5433FF);
     color: white;
 }
 
+/*barra superior*/
 
+.dashboard{
+    display: flex;
+}
+
+.dashboard h1{
+    align-self: center;
+}
+
+.dashboard i{
+    align-self: center;
+}
+
+.notificaciones{
+    display: flex;
+    flex-direction: row-reverse;
+    text-align: center;
+    padding: 10px;
+}
+
+.barra-superior{
+    background: #5433FF;
+    background: -webkit-linear-gradient(to top, #A5FECB, #20BDFF, #5433FF);
+    background: linear-gradient(to top, #A5FECB, #20BDFF, #5433FF);
+    color: white;
+    height: 200px;
+}
+
+.barra-superior .estados div{
+    height: 150px;
+    background-color: white;
+    border: 1px solid white;
+    border-radius: 5px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+
+.barra-superior .estados div h1{
+    color: var(--fondoSecundario);
+    font-size: 15px;
+    font-weight: bold;
+}
+
+.barra-superior .estados div p{
+    color: black;
+    font-size: 12px;
+}
 
