@@ -149,6 +149,7 @@ background: linear-gradient(to top, #A5FECB, #20BDFF, #5433FF);
 
 .caja-sombra{
     margin: 30px;
+    margin-top: 60px;
     background-color: white;
     height: calc( 100vh - 200px -30px);
     -webkit-box-shadow: 0px 0px 51px -10px rgba(0,0,0,0.35);
