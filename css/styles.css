@@ -56,6 +56,8 @@ background: linear-gradient(to top, #A5FECB, #20BDFF, #5433FF);
     justify-content: center;
 }
 
+
+
 .barra-lateral .usuario img{
     border-radius: 60px;
     margin: 20px;
@@ -106,9 +108,6 @@ background: linear-gradient(to top, #A5FECB, #20BDFF, #5433FF);
 }
 
 .notificaciones{
-    display: flex;
-    flex-direction: row-reverse;
-    text-align: center;
     padding: 10px;
 }
 
@@ -120,24 +119,39 @@ background: linear-gradient(to top, #A5FECB, #20BDFF, #5433FF);
     height: 200px;
 }
 
-.barra-superior .estados div{
-    height: 150px;
-    background-color: white;
+.barra-superior .cajas{
+    background-color: rgba(255,255,255,1);
     border: 1px solid white;
-    border-radius: 5px;
-    display: flex;
-    flex-direction: row;
-    justify-content: space-around;
-}
-
-.barra-superior .estados div h1{
-    color: var(--fondoSecundario);
-    font-size: 15px;
-    font-weight: bold;
-}
-
-.barra-superior .estados div p{
+    border-radius: 10px;
     color: black;
-    font-size: 12px;
+    padding: 10px;
+    margin: 25px 20px;   
+    height: 70px;
 }
 
+.barra-superior .cajas h1{
+    color: #f2f2f2;
+    font-size: 15px;
+}
+
+.barra-superior .cajas p{
+    font-size: 10px;
+}
+
+
+.barra-superior .cajas i{
+    font-size: 25px;
+    text-align: center;
+    color: var(--colorPrimario);
+}
+
+/*Main contenido caja sombra*/
+
+.caja-sombra{
+    margin: 10px;
+    background-color: white;
+    height: calc( 100vh - 200px);
+    -webkit-box-shadow: 0px 0px 51px -10px rgba(0,0,0,0.35);
+    -moz-box-shadow: 0px 0px 51px -10px rgba(0,0,0,0.35);
+    box-shadow: 0px 0px 51px -10px rgba(0,0,0,0.35);
+}
